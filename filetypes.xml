@@ -1,0 +1,9 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="recording02" type="PLAIN_TEXT" />
+      <mapping ext="mp3" type="PLAIN_TEXT" />
+      <mapping ext="mp4" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>
