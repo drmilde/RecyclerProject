@@ -21,6 +21,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         this.mDataset = mDataset;
     }
 
+
+    /**
+     * Expandiert (inflate) das Zeilenlayout, hier ein CardView.
+     * Initialisiert den ViewHolder, hier wird der expandierte CardView gespeichert.
+     * Damit wird später der Zugriff auf die einzelnen Bestandteile des
+     * Zeilenlayout möglich.
+     *
+     * @param parent
+     * @param viewType
+     * @return
+     */
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         CardView cv = (CardView) LayoutInflater
