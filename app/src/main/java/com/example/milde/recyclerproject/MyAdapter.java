@@ -10,9 +10,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
+ * Die Klasse implementiert beispielhaft einen Adapter für den RecyclerView.
+ * Der Adapter erwartet einen ViewHolder, eine Wrapperklasse, die
+ * die Daten einer Zeile aufnehmen kann.
+ *
+ * Jede Zeile wird an einen ViewHolder gebunden. Damit kann man auf den
+ * gespeicherten View zugreifen (hier ein CardView) und so Daten in den View
+ * übertragen.
+ *
  * Created by milde on 30.11.17.
  */
-
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     private String[] mDataset;
 
