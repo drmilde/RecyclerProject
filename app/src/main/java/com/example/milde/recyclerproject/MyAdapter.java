@@ -31,6 +31,19 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         return vh;
     }
 
+    /**
+     * Bindet den ViewHolder an die Daten.
+     * Über den Zugriff auf den im ViewHolder gespeicherten CardView
+     * lassen sie die Felder setzen: das Bild, der Name und das Alter.
+     *
+     * Gleichzeitg werden auf den CardView OnClickListener registriert.
+     * Damit kann eine Click Aktion über den Listeneintrag ausgelöst werden.
+     * In diesem Beispiel ein Toast.
+     *
+     * @param holder ViewHolder des aktuellen Datensatzes
+     * @param position Position des Datensatzes im RecyclerView/Datenarray.
+     */
+
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
         holder.mCardView.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +61,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         tva.setText(mDataset[position]);
     }
 
+    /**
+     * Liefert die Größe des Daten-Arrays zurück.
+     * So wird die länge der LIste festgelegt.
+     *
+      * @return Length des datenarrays
+     */
     @Override
     public int getItemCount() {
         return mDataset.length;
