@@ -27,9 +27,7 @@ public class MainActivity extends AppCompatActivity {
         String[] myDataSet  = {
 
                 "Jan-Torsten", "Rebecca", "Elisabeth", "Antonia", "Jakob",
-                "Alexandra", "Charlotte", "Gleb", "Samuel",
-                "Jan-Torsten", "Rebecca", "Elisabeth", "Antonia", "Jakob",
-                "Alexandra", "Charlotte", "Gleb", "Samuel"
+                "Jan-Torsten", "Rebecca", "Elisabeth", "Antonia", "Jakob"
         };
 
         // Adapter initialisieren und setzen
